@@ -28,5 +28,10 @@ namespace BlackJack
             jogo.Show();
             this.Visible = false;
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

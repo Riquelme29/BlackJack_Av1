@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace BlackJack
 {
     partial class Form_jogo
@@ -48,27 +50,32 @@ namespace BlackJack
             // 
             // btn_jogar_1
             // 
+            this.btn_jogar_1.BackColor = System.Drawing.Color.DarkRed;
+            this.btn_jogar_1.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_jogar_1.Location = new System.Drawing.Point(26, 452);
             this.btn_jogar_1.Name = "btn_jogar_1";
             this.btn_jogar_1.Size = new System.Drawing.Size(110, 29);
             this.btn_jogar_1.TabIndex = 0;
             this.btn_jogar_1.Text = "Jogar";
-            this.btn_jogar_1.UseVisualStyleBackColor = true;
+            this.btn_jogar_1.UseVisualStyleBackColor = false;
             this.btn_jogar_1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btn_reiniciar
             // 
-            this.btn_reiniciar.Location = new System.Drawing.Point(333, 12);
+            this.btn_reiniciar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_reiniciar.Font = new System.Drawing.Font("Algerian", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_reiniciar.ForeColor = System.Drawing.Color.DarkGreen;
+            this.btn_reiniciar.Location = new System.Drawing.Point(295, 12);
             this.btn_reiniciar.Name = "btn_reiniciar";
-            this.btn_reiniciar.Size = new System.Drawing.Size(120, 28);
+            this.btn_reiniciar.Size = new System.Drawing.Size(206, 55);
             this.btn_reiniciar.TabIndex = 1;
-            this.btn_reiniciar.Text = "Reiniciar";
-            this.btn_reiniciar.UseVisualStyleBackColor = true;
+            this.btn_reiniciar.Text = "RESTART";
+            this.btn_reiniciar.UseVisualStyleBackColor = false;
             this.btn_reiniciar.Click += new System.EventHandler(this.button2_Click);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::BlackJack.Properties.Resources._0;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(26, 83);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(246, 353);
@@ -79,46 +86,53 @@ namespace BlackJack
             // lbl_Pontos_A
             // 
             this.lbl_Pontos_A.AutoSize = true;
-            this.lbl_Pontos_A.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl_Pontos_A.Location = new System.Drawing.Point(351, 182);
+            this.lbl_Pontos_A.Font = new System.Drawing.Font("Algerian", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_Pontos_A.Location = new System.Drawing.Point(333, 196);
             this.lbl_Pontos_A.Name = "lbl_Pontos_A";
-            this.lbl_Pontos_A.Size = new System.Drawing.Size(25, 25);
+            this.lbl_Pontos_A.Size = new System.Drawing.Size(30, 30);
             this.lbl_Pontos_A.TabIndex = 3;
             this.lbl_Pontos_A.Text = "0";
             // 
             // lbl_legenda
             // 
             this.lbl_legenda.AutoSize = true;
-            this.lbl_legenda.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbl_legenda.Location = new System.Drawing.Point(363, 154);
+            this.lbl_legenda.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbl_legenda.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_legenda.ForeColor = System.Drawing.Color.White;
+            this.lbl_legenda.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_legenda.Location = new System.Drawing.Point(333, 142);
             this.lbl_legenda.Name = "lbl_legenda";
-            this.lbl_legenda.Size = new System.Drawing.Size(60, 21);
+            this.lbl_legenda.Size = new System.Drawing.Size(132, 32);
             this.lbl_legenda.TabIndex = 4;
             this.lbl_legenda.Text = "Pontos:";
             // 
             // btn_parar_1
             // 
+            this.btn_parar_1.BackColor = System.Drawing.Color.DarkRed;
+            this.btn_parar_1.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_parar_1.Location = new System.Drawing.Point(162, 452);
             this.btn_parar_1.Name = "btn_parar_1";
             this.btn_parar_1.Size = new System.Drawing.Size(110, 29);
             this.btn_parar_1.TabIndex = 5;
             this.btn_parar_1.Text = "Parar";
-            this.btn_parar_1.UseVisualStyleBackColor = true;
+            this.btn_parar_1.UseVisualStyleBackColor = false;
             this.btn_parar_1.Click += new System.EventHandler(this.btn_parar_1_Click);
             // 
             // btn_parar_2
             // 
+            this.btn_parar_2.BackColor = System.Drawing.Color.DarkBlue;
+            this.btn_parar_2.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_parar_2.Location = new System.Drawing.Point(656, 452);
             this.btn_parar_2.Name = "btn_parar_2";
             this.btn_parar_2.Size = new System.Drawing.Size(110, 29);
             this.btn_parar_2.TabIndex = 8;
             this.btn_parar_2.Text = "Parar";
-            this.btn_parar_2.UseVisualStyleBackColor = true;
+            this.btn_parar_2.UseVisualStyleBackColor = false;
             this.btn_parar_2.Click += new System.EventHandler(this.btn_parar_2_Click);
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::BlackJack.Properties.Resources._0;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(520, 83);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(246, 353);
@@ -128,28 +142,30 @@ namespace BlackJack
             // 
             // btn_jogar_2
             // 
+            this.btn_jogar_2.BackColor = System.Drawing.Color.DarkBlue;
+            this.btn_jogar_2.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_jogar_2.Location = new System.Drawing.Point(520, 452);
             this.btn_jogar_2.Name = "btn_jogar_2";
             this.btn_jogar_2.Size = new System.Drawing.Size(110, 29);
             this.btn_jogar_2.TabIndex = 6;
             this.btn_jogar_2.Text = "Jogar";
-            this.btn_jogar_2.UseVisualStyleBackColor = true;
+            this.btn_jogar_2.UseVisualStyleBackColor = false;
             this.btn_jogar_2.Click += new System.EventHandler(this.btn_jogar_2_Click);
             // 
             // lbl_Pontos_B
             // 
             this.lbl_Pontos_B.AutoSize = true;
-            this.lbl_Pontos_B.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl_Pontos_B.Location = new System.Drawing.Point(407, 182);
+            this.lbl_Pontos_B.Font = new System.Drawing.Font("Algerian", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_Pontos_B.Location = new System.Drawing.Point(435, 196);
             this.lbl_Pontos_B.Name = "lbl_Pontos_B";
-            this.lbl_Pontos_B.Size = new System.Drawing.Size(25, 25);
+            this.lbl_Pontos_B.Size = new System.Drawing.Size(30, 30);
             this.lbl_Pontos_B.TabIndex = 9;
             this.lbl_Pontos_B.Text = "0";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(388, 186);
+            this.label1.Location = new System.Drawing.Point(393, 208);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(13, 15);
             this.label1.TabIndex = 10;
@@ -168,6 +184,7 @@ namespace BlackJack
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(782, 502);
             this.Controls.Add(this.lbl_Resultado);
             this.Controls.Add(this.label1);
@@ -181,6 +198,7 @@ namespace BlackJack
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btn_reiniciar);
             this.Controls.Add(this.btn_jogar_1);
+            this.ForeColor = System.Drawing.Color.White;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -208,6 +226,8 @@ namespace BlackJack
         private System.Windows.Forms.Label lbl_Pontos_B;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbl_Resultado;
+
+        public EventHandler Form_jogo_Load { get; private set; }
     }
 }
 

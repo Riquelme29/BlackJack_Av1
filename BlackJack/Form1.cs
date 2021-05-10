@@ -39,15 +39,20 @@ namespace BlackJack
 
 
             if (pontos_A > pontos_B && pontos_A <= 21)
-                lbl_Resultado.Text = "Jogador 1 GANHOU!";
+                lbl_Resultado.Text = "JOGADOR 1 GANHOU!";
             else
                 if (pontos_A < pontos_B && pontos_B <= 21)
-                lbl_Resultado.Text = "Jogador 2 GANHOU!";
+                lbl_Resultado.Text = "JOGADOR 2 GANHOU!";
             else
                     if (pontos_A <= 21 && pontos_B <= 21)
                 lbl_Resultado.Text = "EMPATE";
             else
-                lbl_Resultado.Text = "SEM VENCEDOR.";
+                    if (pontos_A > pontos_B)
+                lbl_Resultado.Text = "JOGADOR 2 GANHOU!";
+            else
+                    if (pontos_B > pontos_A)
+                lbl_Resultado.Text = "JOGADOR 1 GANHOU!";
+
 
         }
 
@@ -70,9 +75,9 @@ namespace BlackJack
                 case 8:     A.Image = Properties.Resources._8;   total_pontos += 8;     break;
                 case 9:     A.Image = Properties.Resources._9;   total_pontos += 9;     break;
                 case 10:    A.Image = Properties.Resources._10;  total_pontos += 10;    break;
-                case 11:    A.Image = Properties.Resources.J;    total_pontos += 11;    break;
-                case 12:    A.Image = Properties.Resources.Q;    total_pontos += 12;    break;
-                case 13:    A.Image = Properties.Resources.K;    total_pontos += 13;    break;
+                case 11:    A.Image = Properties.Resources.J;    total_pontos += 10;    break;
+                case 12:    A.Image = Properties.Resources.Q;    total_pontos += 10;    break;
+                case 13:    A.Image = Properties.Resources.K;    total_pontos += 10;    break;
             }
 
             if (jogador == 1)
@@ -178,6 +183,7 @@ namespace BlackJack
             btn_reiniciar.Enabled = true;
             resultado();
         }
+
     }
 
 
